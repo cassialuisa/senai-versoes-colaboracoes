@@ -1,0 +1,26 @@
+let listaDeParticipantes = [];
+let listaPalestrantes = ["Amanda, André, Antônio"];
+let quantidadeDeParticipantes = listaDeParticipantes.length;
+let idadeJose = 20;
+
+//verifica a possibilidade de adicionar participante baseado na qtde de vagas e na idade do participante. 
+if (quantidadeDeParticipantes >= 100) {
+    console.log("Infelizmente as vagas para esse evento esgotaram.")
+} else { 
+    if (idadeJose >= 18 ) {
+    listaDeParticipantes.push("José");
+    console.log("Participante adicionado com sucesso. Segue a Lista de Participantes abaixo:");
+    console.log(listaDeParticipantes);
+    console.log("Os palestrantes desse evento serão:", listaPalestrantes);
+    } else {
+        console.log("erro: Idade miníma.");
+    }
+} 
+//verifica se pode criar o evento 
+var dataatual = new Date (2021,12,30);
+var dataevento = new Date (2019,1,02);
+if (dataevento > dataatual) {
+    console.log('evento cadastrado')
+} else {
+    console.log('não foi possível adicionar o evento')
+}
